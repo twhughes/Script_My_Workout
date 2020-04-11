@@ -25,5 +25,3 @@ class workout():
             # self.trainer.say_phrase()
             section.run()
 
-# hard_workout = workout(name='hard', sections=[warmup, hit, cooldown], rest_time=20)
-# hard_workout.run()

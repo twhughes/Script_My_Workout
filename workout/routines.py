@@ -36,6 +36,13 @@ def abab(exercises, sec_on=20, sec_off=10):
         countdown(sec_on, sec_say=5)
         timed_rest(sec_off)
 
+def _pairs(exercises):
+    """ Returns a list of pairs of exercises in `excercises` """
+    pair_list = []
+    for i in range(len(exercises)//2):
+        pair_list.append((exercises[2 * i], exercises[2 * i + 1]))
+    return pair_list
+
 """ Specific examples """
 
 def one_min_each(exercises):
@@ -45,13 +52,6 @@ def one_min_each(exercises):
 def abab_25(exercises):
     """ ABAB format with 25 seconds on and 5 seconds off between each excercise """
     return abab(exercises, sec_on=25, sec_off=10)
-
-def _pairs(exercises):
-    """ Returns a list of pairs of exercises in `excercises` """
-    pair_list = []
-    for i in range(len(exercises)//2):
-        pair_list.append((exercises[2 * i], exercises[2 * i + 1]))
-    return pair_list
 
 routine_map = {
     'one_min_each': one_min_each,
