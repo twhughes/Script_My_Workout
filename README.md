@@ -1,4 +1,5 @@
-# Terminal workout [![Build Status](url)](https://travis-ci.com/twhughes/workout)
+# Terminal workout 
+[![Build Status](url)](https://travis-ci.com/twhughes/workout)
 
 Create your own terminal-based workouts in python!
 
