@@ -1,4 +1,4 @@
-# Terminal workout
+# Script My Workout
 
 Create your own terminal-based workouts in python!
 
