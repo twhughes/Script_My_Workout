@@ -1,16 +1,19 @@
 # Terminal workout
-[![Build Status](url)](https://travis-ci.com/twhughes/workout)
 
 Create your own terminal-based workouts in python!
 
 ![](img/jumping-jack-160.gif)
 
-<!-- <img src="/img/logo.png" title="logo" alt="logo"> -->
-
 ## How to install
 
-    git clone URL
+No installation necessary, just clone the repo.
+
+    git clone https://github.com/twhughes/Script_My_Workout.git
     cd Script_My_Workout
+
+optionally, you can pip install it locally after these steps.
+
+    pip install -e .
 
 ## How to use
 
@@ -44,7 +47,7 @@ hard_workout.run()
 
 To start, simply run
 
-    `python hard_workout.py`
+    python hard_workout.py
 
 ### YAML file
 
@@ -83,6 +86,8 @@ sections:
 And one can run it with
 
     python -m workout hard_workout.yaml
+    
+Note that the routines here must be defined in the `routines_map` dictionary in `workout/routines.py`.
 
 ## Customizing your own workouts.
 
