@@ -1,4 +1,4 @@
-# Terminal workout 
+# Terminal workout
 [![Build Status](url)](https://travis-ci.com/twhughes/workout)
 
 Create your own terminal-based workouts in python!
@@ -10,10 +10,15 @@ Create your own terminal-based workouts in python!
 ## How to install
 
     git clone URL
-    cd URL
-    python run_my_workout.py
+    cd Script_My_Workout
 
-The script `run_my_workout.py` gives an example of a customized workout, copied below.
+## How to use
+
+There are two ways to define workouts:
+
+### Python Script
+
+The script `hard_workout.py` gives an example of a customized workout, copied below.
 
 ```python
 # import core classes for defining workout
@@ -36,6 +41,48 @@ hard_workout = workout(name='hard', sections=[warmup, hit, cooldown])
 # run the workout
 hard_workout.run()
 ```
+
+To start, simply run
+
+    `python hard_workout.py`
+
+### YAML file
+
+You can also define a workout in a YAML file and run it.
+
+As an example. we've defined `hard_workout.yaml`, with contents copied below.
+
+```yaml
+name: "hard workout"
+
+sections:
+
+  section1:
+    name: "warmup"
+    routine: "one_min_each"
+    exercises:
+      - toe touch
+      - gorilla lunge
+
+  section2:
+    name: "HIT"
+    routine: "abab_25"
+    exercises:
+      - jumping jacks
+      - burpees
+      - push ups
+
+  section3:
+    name: "cooldown"
+    routine: "one_min_each"
+    exercises:
+      - hamstring stretch
+      - cobra stretch
+```
+
+And one can run it with
+
+    python -m workout hard_workout.yaml
 
 ## Customizing your own workouts.
 
