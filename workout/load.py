@@ -7,7 +7,6 @@ def load_workout(fname):
     with open(fr'{fname}') as file:
         workout_dict = yaml.load(file, Loader=yaml.FullLoader)
         workout = strip_workout(workout_dict)
-    workout.run()
     return workout
 
 def strip_workout(workout_dict):

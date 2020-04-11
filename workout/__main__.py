@@ -1,8 +1,17 @@
 import sys
+
 from .load import load_workout
 
-def get_workout():
-    fname = sys.argv[1]
-    load_workout(fname)
+""" Usage:   `python -m workout my_workout_file.yaml`  """
 
-get_workout()
+def get_workout():
+    """ First argument is the YAML file defining the workout """
+    fname = sys.argv[1]
+    return load_workout(fname)
+
+# load the workout from file
+workout = get_workout()
+
+# and run it
+workout.run()
+
