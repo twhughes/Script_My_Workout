@@ -3,7 +3,9 @@
 
 Create your own terminal-based workouts in python!
 
-<img src="/img/logo.png" title="logo" alt="logo">
+![](img/jumping-jack-160.gif)
+
+<!-- <img src="/img/logo.png" title="logo" alt="logo"> -->
 
 ## How to install
 
