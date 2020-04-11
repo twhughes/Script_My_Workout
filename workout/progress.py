@@ -1,5 +1,6 @@
 import os
 import time
+import tqdm
 
 """ Terminal display and audio progress markers """
 
@@ -36,13 +37,19 @@ def say_and_sleep(string, sec):
     if sec > t:
         sleep(sec - t)
 
-def countdown(sec, sec_say=None):
+def _progressbar(secs):
+    """ Makes a simple progress bar that goes away after it finishes """
+    return tqdm.tqdm(secs, leave=False, bar_format='{l_bar}{bar}')
+
+def countdown(sec, sec_say=None, progressbar=True):
     """ Time a `sec` second countdown, say countdown out loud with `sec_say` left """
     sec, sec_say = int(sec), int(sec_say)
     say(f'{sec} seconds')
-    for sec_left in range(sec, 0, -1):
+    secs = range(sec, 0, -1)
+    secs_iter = _progressbar(secs) if progressbar else secs
+    for sec_left in secs_iter:
         if sec_say is not None and sec_left <= sec_say:
-            t = max(say(sec_left), 0)
+            t = min(say(sec_left), 1)  # if takes greater than
             time.sleep(1 - t)
         else:
             time.sleep(1)

@@ -6,7 +6,8 @@ with open('README.md', 'r') as f:
     readme = f.read()
 
 dependencies = [
-        'numpy>=1.16.2'
+        'numpy>=1.16.2',
+        'tqdm'
 ]
 
 setup(
