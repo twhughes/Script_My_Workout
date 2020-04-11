@@ -86,7 +86,7 @@ sections:
 And one can run it with
 
     python -m workout hard_workout.yaml
-    
+
 Note that the routines here must be defined in the `routines_map` dictionary in `workout/routines.py`.
 
 ## Customizing your own workouts.
@@ -107,7 +107,7 @@ Workouts are fully customizable by editing the files in the `workout/` directory
 - [x] Workout definition through YAML file.
 - [ ] More sophisticated definition of exercises (difficulty, categories, etc.)
 - [ ] Randomization of workouts (choose amount of time and difficulty -> generate exercise list)
-- [ ] Progress bar display.
+- [x] Progress bar display.
 - [ ] ASCII art for each exercise.
 
 I fully welcome contributions or ideas for new features or improvements!  Please leave an issue or pull request if you want to make any contributions.
