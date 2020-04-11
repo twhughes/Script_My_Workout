@@ -22,7 +22,7 @@ def abab(exercises, sec_on=20, sec_off=10):
         countdown(sec_on, sec_say=5)
         timed_rest(sec_off)
 
-        display(f'    -> (1b) {a} for {sec_on} sec: ')
+        display(f'    -> (1b) {b} for {sec_on} sec: ')
         say(b)
         countdown(sec_on, sec_say=5)
         timed_rest(sec_off)
@@ -31,7 +31,7 @@ def abab(exercises, sec_on=20, sec_off=10):
         countdown(sec_on, sec_say=5)
         timed_rest(sec_off)
 
-        display(f'    -> (2b) {a} for {sec_on} sec: ')
+        display(f'    -> (2b) {b} for {sec_on} sec: ')
         say(b)
         countdown(sec_on, sec_say=5)
         timed_rest(sec_off)
