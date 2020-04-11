@@ -1,0 +1,54 @@
+# This file defines a workout
+
+name: hard workout
+
+trainer: Rishi
+
+sections:
+
+  section1:
+    name: warmup
+    routine: one_min_each
+    exercises:
+      - toe touch
+      - gorilla lunge
+      - jumping jacks
+      - cross elbow stretch
+      - twist and knee up
+
+  section2:
+    name: HIT
+    routine: abab_25
+    exercises:
+      - jumping jacks
+      - burpees
+      - push ups
+      - star jumps
+      - jumping lunges
+      - burpees
+      - mountain climbers
+      - push ups
+      - push ups
+      - pop squats
+      - high knees
+      - side plank toe touch left
+      - side plank toe touch right
+      - plank
+      - bicycle crunches
+      - jumping jacks
+      - high knees both up
+      - pop squats
+      - russian twists
+
+  section3:
+    name: cooldown
+    routine: one_min_each
+    exercises:
+      - hamstring stretch
+      - cobra stretch
+      - arm stretches
+      - hamstring stretches
+      - leg over each other
+      - downward dog
+      - childs pose
+      - cobra stretch

@@ -21,7 +21,7 @@ There are two ways to define workouts:
 
 ### Python Script
 
-The script `hard_workout.py` gives an example of a customized workout, copied below.
+The script `run_my_workout.py` gives an example of a customized workout, copied below.
 
 ```python
 # import core classes for defining workout
@@ -47,45 +47,45 @@ hard_workout.run()
 
 To start, simply run
 
-    python hard_workout.py
+    python run_my_workout.py
 
 ### YAML file
 
 You can also define a workout in a YAML file and run it.
 
-As an example. we've defined `hard_workout.yaml`, with contents copied below.
+As an example. see the yaml files in `workout_files`. For example, the following yaml file defines a workout:
 
 ```yaml
-name: "hard workout"
+name: hard workout
 
 sections:
 
   section1:
-    name: "warmup"
-    routine: "one_min_each"
+    name: warmup
+    routine: one_min_each
     exercises:
       - toe touch
       - gorilla lunge
 
   section2:
-    name: "HIT"
-    routine: "abab_25"
+    name: HIT
+    routine: abab_25
     exercises:
       - jumping jacks
       - burpees
       - push ups
 
   section3:
-    name: "cooldown"
-    routine: "one_min_each"
+    name: cooldown
+    routine: one_min_each
     exercises:
       - hamstring stretch
       - cobra stretch
 ```
 
-And one can run it with
+And one can run these files with
 
-    python -m workout hard_workout.yaml
+    python -m workout workout_files/hard_workout.yaml
 
 Note that the routines here must be defined in the `routines_map` dictionary in `workout/routines.py`.
 
