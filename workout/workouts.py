@@ -1,4 +1,5 @@
 from .progress import say, display, timed_rest, untimed_rest
+from .trainers import Juan, Veronica, Rishi
 
 """ A 'workout' defines a full exercise regime.
     It consists of several 'programs', each containing a set of excercises executed in a `routine`.
@@ -6,9 +7,10 @@ from .progress import say, display, timed_rest, untimed_rest
 
 class workout():
 
-    def __init__(self, name, sections):
+    def __init__(self, name, sections, trainer=Rishi):
         self.name = name
         self.sections = sections
+        self.trainer = trainer
 
     def print_info(self):
         display(f'\nrunning workout: "{self.name}" with sections:')
@@ -16,10 +18,11 @@ class workout():
             display(f'  section {i}: {section.name}')
 
     def run(self):
-        # say('this workout will kick your ass')
+        # self.trainer.introduce()
         self.print_info()
         for section in self.sections:
             untimed_rest()
+            # self.trainer.say_phrase()
             section.run()
 
 # hard_workout = workout(name='hard', sections=[warmup, hit, cooldown], rest_time=20)

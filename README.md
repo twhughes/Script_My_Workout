@@ -109,6 +109,7 @@ Workouts are fully customizable by editing the files in the `workout/` directory
 - [ ] Randomization of workouts (choose amount of time and difficulty -> generate exercise list)
 - [x] Progress bar display.
 - [ ] ASCII art for each exercise.
+- [ ] Trainers with different personalities.
 
 I fully welcome contributions or ideas for new features or improvements!  Please leave an issue or pull request if you want to make any contributions.
 
