@@ -48,7 +48,9 @@ Workouts are fully customizable by editing the files in the `workout/` directory
 
 ## Features Coming soon
 
-[ ] More sophisticated definition of exercise (difficulty, categories, etc.)
+[ ] Customizable command line interface (define workout via command line arguments)
+[ ] Workout definition through YAML file.
+[ ] More sophisticated definition of exercises (difficulty, categories, etc.)
 [ ] Randomization of workouts (choose amount of time and difficulty -> generate exercise list)
 [ ] Progress bar display.
 [ ] ASCII art for each exercise.
