@@ -27,6 +27,14 @@ hit_exercises = [
     'russian twists'
 ]
 
+ab_exercises = [
+    'jack knife crunches',
+    'bicycle crunches',
+    'russian twists',
+    'side plank toe touch left',
+    'side plank toe touch right'
+]
+
 cooldown_exercises = [
     'arm stretches',
     'hamstring stretches',
