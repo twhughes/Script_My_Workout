@@ -52,3 +52,8 @@ def _pairs(exercises):
     for i in range(len(exercises)//2):
         pair_list.append((exercises[2 * i], exercises[2 * i + 1]))
     return pair_list
+
+routine_map = {
+    'one_min_each': one_min_each,
+    'abab_25': abab_25
+}
