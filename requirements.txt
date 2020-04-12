@@ -2,3 +2,4 @@ numpy>=1.16.2
 tqdm
 pyfiglet
 pyyaml
+caffeine

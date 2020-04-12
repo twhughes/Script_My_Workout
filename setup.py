@@ -9,7 +9,8 @@ dependencies = [
         'numpy>=1.16.2',
         'tqdm',
         'pyfiglet',
-        'pyyaml'
+        'pyyaml',
+        'caffeine'
 ]
 
 setup(

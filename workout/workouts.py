@@ -1,4 +1,5 @@
 import pyfiglet
+import caffeine
 
 from .progress import say, display, timed_rest, untimed_rest
 from .trainers import Rishi
@@ -26,6 +27,7 @@ class workout():
             display(f'  section {i}: {section.name}')
 
     def run(self):
+        caffeine.on(display=True)
         self.welcome()
         # self.trainer.introduce()
         self.print_info()
@@ -33,4 +35,5 @@ class workout():
             untimed_rest()
             # self.trainer.say_phrase()
             section.run()
+        caffeine.off()
 
