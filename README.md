@@ -8,7 +8,7 @@ Create your own terminal-based workouts!
 
 'Script My Workout' is a framework that lets you define and run your own workout exercise programs, which run right in the terminal.
 
-Each `workout` is comprised of different `sections`, which contain a list of `exercises` and a `routine`, which is a function that runs through them in some sequence.
+Each `workout` is comprised of different `sections`, which contain a list of `exercises` and a `routine`, which is a function that runs through them in a user-defined sequence.
 
 When running each `section`, the program prints information to the terminal and narrates the process out loud for you to follow along with.
 
