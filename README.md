@@ -12,6 +12,9 @@ Each `workout` is comprised of different `sections`, which contain a list of `ex
 
 When running each `section`, the program prints information to the terminal and narrates the process out loud for you to follow along with.
 
+![](img/screenshot.png)
+
+
 ## How to install
 
 Run the following commands
