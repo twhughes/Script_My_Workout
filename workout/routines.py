@@ -30,6 +30,7 @@ def abab(exercises, sec_on=20, sec_off=10):
         timed_rest(sec_off)
 
         display(f'    -> (2a) {a} for {sec_on} sec: ')
+        say(a)
         countdown(sec_on, sec_say=5)
         timed_rest(sec_off)
 

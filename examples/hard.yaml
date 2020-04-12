@@ -15,25 +15,25 @@ sections:
       - twist and knee up
 
   section2:
-    name: HIT1
+    name: HIIT1
     routine: abab_25
     exercises:
       - jumping jacks
       - burpees
+      - pop squats
       - push ups
       - star jumps
       - jumping lunges
-      - burpees
       - side plank toe touch left
       - side plank toe touch right
 
   section3:
-    name: HIT2
+    name: HIIT2
     routine: abab_25
-    exercises:            
+    exercises:
       - mountain climbers
       - push ups
-      - pop squats
+      - burpees
       - high knees
       - plank
       - bicycle crunches

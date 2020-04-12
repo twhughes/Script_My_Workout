@@ -8,7 +8,7 @@ warmup_exercises = [
     'jumping jacks'
 ]
 
-hit_exercises = [
+hiit_exercises = [
     'star jumps',
     'jumping lunges',
     'burpees',

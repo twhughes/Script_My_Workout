@@ -6,7 +6,7 @@ from .progress import say, display
     For example, a workout might consist of the following sections
     workout_A = {
         warmup (5 min)
-        HIT (15 min)
+        HIIT (15 min)
         abs (10 min)
         cooldown (5 min)
     }
