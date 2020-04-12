@@ -9,7 +9,7 @@ from workout.routines import each_20_sec, abab_25
 
 # define the different `sections` of your workout with a list of exercises and a routine for running them
 warmup   = section(name='warmup',   exercises=warmup_exercises,   routine=each_20_sec)
-hit      = section(name='HIIT',     exercises=hiit_exercises,     routine=abab_25)
+hiit      = section(name='HIIT',     exercises=hiit_exercises,     routine=abab_25)
 cooldown = section(name='cooldown', exercises=cooldown_exercises, routine=each_20_sec)
 
 # create a workout defined by a list of sections
