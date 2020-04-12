@@ -4,7 +4,7 @@ sections:
 
   section1:
     name: warmup
-    routine: one_min_each
+    routine: each_1_min
     exercises:
       - toe touch
       - rotate and leg up
@@ -23,7 +23,7 @@ sections:
 
   section3:
     name: cooldown
-    routine: one_min_each
+    routine: each_1_min
     exercises:
       - hamstring stretch
       - cobra stretch
