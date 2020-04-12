@@ -1,62 +1,33 @@
 # Script My Workout
 
-Create your own terminal-based workouts in python!
+Create your own terminal-based workouts!
 
 ![](img/jumping-jack-160.gif)
 
 ## How to install
 
-No installation necessary, just clone the repo.
+Run the following commands
 
     git clone https://github.com/twhughes/Script_My_Workout.git
     cd Script_My_Workout
-
-optionally, you can pip install it locally after these steps.
-
     pip install -e .
+
+You can test if it worked by running one of the example workouts
+
+    python -m workout examples/easy.yaml
 
 ## How to use
 
 There are two ways to define workouts:
 
-### Python Script
-
-The script `run_my_workout.py` gives an example of a customized workout, copied below.
-
-```python
-# import core classes for defining workout
-from workout import workout, section
-
-# import lists of exercises
-from workout.exercises import warmup_exercises, hit_exercises, cooldown_exercises
-
-# import routines (how to execute each list of exercises)
-from workout.routines import one_min_each, abab_25
-
-# define the different `sections` of your workout with a list of exercises and a routine for running them
-warmup   = section(name='warmup',   exercises=warmup_exercises,   routine=one_min_each)
-hit      = section(name='HIT',      exercises=hit_exercises,      routine=abab_25)
-cooldown = section(name='cooldown', exercises=cooldown_exercises, routine=one_min_each)
-
-# create a workout defined by a list of sections
-hard_workout = workout(name='hard', sections=[warmup, hit, cooldown])
-
-# run the workout
-hard_workout.run()
-```
-
-To start, simply run
-
-    python run_my_workout.py
-
 ### YAML file
 
-You can also define a workout in a YAML file and run it.
+The simplest way is to define a workout in a YAML file.
 
-As an example. see the yaml files in `workout_files`. For example, the following yaml file defines a workout:
+For example, the following yaml file `examples/easy.yaml` defines a simple workout:
 
 ```yaml
-name: hard workout
+name: easy workout
 
 sections:
 
@@ -65,7 +36,7 @@ sections:
     routine: one_min_each
     exercises:
       - toe touch
-      - gorilla lunge
+      - run in place
 
   section2:
     name: HIT
@@ -74,6 +45,7 @@ sections:
       - jumping jacks
       - burpees
       - push ups
+      - high knees
 
   section3:
     name: cooldown
@@ -83,11 +55,40 @@ sections:
       - cobra stretch
 ```
 
-And one can run these files with
+And one can run this file with
 
-    python -m workout workout_files/hard_workout.yaml
+    python -m workout examples/easy.yaml
 
-Note that the routines here must be defined in the `routines_map` dictionary in `workout/routines.py`.
+There are a few other example files in the `examples/` directory.
+
+
+### Python Script
+
+For a bit more customization, one can also write a workout script in python.
+
+Here's an example script that defines and runs a simple workout.
+
+```python
+# import basic things you need from the package + routines and exercises
+from workout import workout, section
+from workout.exercises import warmup_exercises, hit_exercises, cooldown_exercises
+from workout.routines import one_min_each, abab_25
+
+# define the different `sections` of your workout with a list of exercises and a routine for running them
+warmup   = section(name='warmup',   exercises=warmup_exercises,   routine=one_min_each)
+hit      = section(name='HIT',      exercises=hit_exercises,      routine=abab_25)
+cooldown = section(name='cooldown', exercises=cooldown_exercises, routine=one_min_each)
+
+# create a workout defined by a list of sections
+hard_workout = workout(name='easy', sections=[warmup, hit, cooldown])
+
+# run the workout
+hard_workout.run()
+```
+
+For an example, run the script `simple_script.py`.
+
+    python examples/simple_script.py
 
 ## Customizing your own workouts.
 
@@ -103,13 +104,13 @@ Workouts are fully customizable by editing the files in the `workout/` directory
 
 ## Features Coming soon
 
-- [ ] Customizable command line interface (define workout via command line arguments)
 - [x] Workout definition through YAML file.
+- [x] Progress bar display.
+- [ ] Trainers with different personalities.
+- [ ] Customizable command line interface (define workout via command line arguments)
 - [ ] More sophisticated definition of exercises (difficulty, categories, etc.)
 - [ ] Randomization of workouts (choose amount of time and difficulty -> generate exercise list)
-- [x] Progress bar display.
 - [ ] ASCII art for each exercise.
-- [ ] Trainers with different personalities.
 
 I fully welcome contributions or ideas for new features or improvements!  Please leave an issue or pull request if you want to make any contributions.
 

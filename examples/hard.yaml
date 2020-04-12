@@ -2,8 +2,6 @@
 
 name: hard workout
 
-trainer: Rishi
-
 sections:
 
   section1:
@@ -28,7 +26,6 @@ sections:
       - burpees
       - mountain climbers
       - push ups
-      - push ups
       - pop squats
       - high knees
       - side plank toe touch left
@@ -51,4 +48,3 @@ sections:
       - leg over each other
       - downward dog
       - childs pose
-      - cobra stretch

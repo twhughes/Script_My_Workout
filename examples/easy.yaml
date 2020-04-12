@@ -1,0 +1,55 @@
+name: easy workout
+
+sections:
+
+  section1:
+    name: warmup
+    routine: each_20_sec
+    exercises:
+      - toe touch
+      - run in place
+      - twist and knee up
+
+  section2:
+    name: cardio1
+    routine: abab_25
+    exercises:
+      - jumping jacks
+      - push ups
+      - high knees
+      - squats
+
+  section3:
+    name: abs1
+    routine: each_20_sec
+    exercises:
+      - crunches
+      - mountain climbers
+      - plank
+
+  section4:
+    name: cardio2
+    routine: abab_25
+    exercises:
+      - jumping jacks
+      - push ups
+      - high knees
+      - squats
+
+  section5:
+    name: abs2
+    routine: each_20_sec
+    exercises:
+      - crunches
+      - mountain climbers
+      - plank
+
+  section6:
+    name: cooldown
+    routine: each_20_sec
+    exercises:
+      - hamstring stretch
+      - cobra stretch
+      - hamstring stretches
+      - downward dog
+      - childs pose

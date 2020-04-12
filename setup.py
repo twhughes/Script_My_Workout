@@ -7,7 +7,8 @@ with open('README.md', 'r') as f:
 
 dependencies = [
         'numpy>=1.16.2',
-        'tqdm'
+        'tqdm',
+        'pyfiglet'
 ]
 
 setup(

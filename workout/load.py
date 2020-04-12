@@ -2,7 +2,9 @@ import yaml
 
 from .workouts import workout
 from .sections import section
-from .routines import routine_map
+import workout.routines as routines
+
+import workout.routines as routines
 
 def load_workout(fname):
     with open(fr'{fname}') as file:
@@ -22,6 +24,6 @@ def strip_workout(workout_dict):
 def strip_section(section_dict):
     name = section_dict['name']
     routine_name = section_dict['routine']
-    routine = routine_map[routine_name]
+    routine = getattr(routines, routine_name)
     exercises = section_dict['exercises']
     return section(name=name, exercises=exercises, routine=routine)
