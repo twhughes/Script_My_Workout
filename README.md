@@ -16,6 +16,8 @@ When running each `section`, the program prints information to the terminal and 
 
 ## How to install
 
+Note that this package (and the installation instructions) work with python 3 (and pip 3).  Depending on how your system is set up, you might need to replace `python` with `python3` and `pip` with `pip3` in the following to make this explicit.
+
 Run the following commands
 
     git clone https://github.com/twhughes/Script_My_Workout.git
