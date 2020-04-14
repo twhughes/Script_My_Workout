@@ -76,6 +76,10 @@ def abab_25(exercises):
     """ ABAB format with 25 seconds on and 5 seconds off between each excercise """
     return abab(exercises, sec_on=25, sec_off=10)
 
+def abab_45(exercises):
+    """ ABAB format with 25 seconds on and 5 seconds off between each excercise """
+    return abab(exercises, sec_on=45, sec_off=15)
+
 def pyramid_60(exercises):
     """ Ramps up and down by 10 seconds to 60 seconds with 10 sec rest in between """
     return pyramid(exercises, sec_max=60, sec_off=10)
