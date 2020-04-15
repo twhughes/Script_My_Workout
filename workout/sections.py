@@ -14,11 +14,12 @@ from .progress import say, display
 
 class section():
 
-    def __init__(self, name, exercises, routine):
+    def __init__(self, name, exercises, routine, shuffle=False):
         self.name = name
         self.exercises = exercises
         self.routine = routine
-        self.shuffle()
+        if shuffle:
+            self.shuffle()
 
     def shuffle(self):
         shuffle(self.exercises)
