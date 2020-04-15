@@ -63,22 +63,29 @@ def _pairs(exercises):
 
 
 """ Specific routines that you can use in the files and scripts """
-
 def each_1_min(exercises):
     """ Do one minute of each exercise with 10 second break """
     one_by_one(exercises, sec_on=60, sec_off=10)
+
+def each_50_sec(exercises):
+    """ Do 50 seconds of each exercise with 10 second break """
+    one_by_one(exercises, sec_on=50, sec_off=10)
+
+def each_30_sec(exercises):
+    """ Do one minute of each exercise with no break """
+    one_by_one(exercises, sec_on=30, sec_off=0)
 
 def each_20_sec(exercises):
     """ Do ten seconds of each exercise with 0 second break """
     one_by_one(exercises, sec_on=20, sec_off=5)
 
 def abab_25(exercises):
-    """ ABAB format with 25 seconds on and 5 seconds off between each excercise """
+    """ ABAB format with 25 seconds on and 10 seconds off between each excercise """
     return abab(exercises, sec_on=25, sec_off=10)
 
-def abab_45(exercises):
-    """ ABAB format with 25 seconds on and 5 seconds off between each excercise """
-    return abab(exercises, sec_on=45, sec_off=15)
+def abab_20(exercises):
+    """ ABAB format with 20 seconds on and 10 seconds off between each excercise """
+    return abab(exercises, sec_on=20, sec_off=10)
 
 def pyramid_60(exercises):
     """ Ramps up and down by 10 seconds to 60 seconds with 10 sec rest in between """
