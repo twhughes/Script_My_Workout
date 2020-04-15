@@ -17,6 +17,7 @@ DEFAULT_VOICE = 'Rishi'
 def say(string, voice=DEFAULT_VOICE):
     """ Have computer speak string out loud, return time """
     time_before = time.time()
+    string = str(string)
     string_cleaned = string.replace('(', '').replace(')', '')   # get rid of parenthesis (throw errors)
     os.system(f'say -v "{voice}" {string_cleaned}')
     say_time = time.time() - time_before
